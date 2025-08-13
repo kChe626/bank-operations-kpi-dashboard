@@ -94,7 +94,7 @@ ORDER BY ym, contact_channel;
 ---
 
 ## **Preview**
-![Bank Marketing Power BI Dashboard](https://github.com/kChe626/Bank_Marketing/blob/main/Bank_dashboard_preview.gif)
+![Bank Marketing Power BI Dashboard](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/power_bi/Bank_dashboard_preview.gif)
 
 ---
 ## **Dashboard Pages**
