@@ -12,7 +12,7 @@ It uses Python for preprocessing, SQL for KPI aggregation, and Power BI for a mu
 ---
 
 ## **Dataset**
-- **Source:** [bank_cleaned_operational.csv](https://github.com/kChe626/Bank_Marketing/blob/main/bank.csv)  
+- **Source:** [bank_cleaned_operational.csv](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/data/bank.csv)  
 - **Columns:** customer demographics, contact channel, call duration, conversion outcome, age band, job role, and operational flags (repeat contact, follow-up, prior contact)
 
 ---
@@ -45,8 +45,8 @@ df[flag_cols] = df[flag_cols].apply(pd.to_numeric, errors='coerce').fillna(0).as
 
 ```
 
-**Full Cleaning Script:** [Bank_Operation_Python.ipynb](https://github.com/kChe626/Bank_Marketing/blob/main/Bank_cleaning_Python)  
-**Cleaned Dataset:** [bank_cleaned_operational.csv](https://github.com/kChe626/Bank_Marketing/blob/main/bank_cleaned.csv)
+**Full Cleaning Script:** [Bank_Operation_Python.ipynb](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/notes/Bank_Operation_Python.ipynb)  
+**Cleaned Dataset:** [bank_cleaned_operational.xlsx]([https://github.com/kChe626/Bank_Marketing/blob/main/bank_cleaned.csv](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/data/bank_cleaned_operational.xlsx))
 
 ---
 
@@ -82,7 +82,7 @@ GROUP BY ym, contact_channel
 ORDER BY ym, contact_channel;
 ```
 
-**Full Analysis Script:** [Bank_Operation_SQL.sql](https://github.com/kChe626/Bank_Marketing/blob/main/Bank_Analysis_SQL.sql)
+**Full Analysis Script:** [Bank_Operation_SQL.sql](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/notes/Bank_Operation_SQL.sql)
 
 ---
 
@@ -104,7 +104,7 @@ ORDER BY ym, contact_channel;
 4. Job Role Targeting — Conversion efficiency and contact volume by job category    
 ---
 ## **How to Open**
-1. Download the Power BI dashboard: [Bank_Operation.pbix](https://github.com/kChe626/Bank_Marketing/blob/main/bank_power_bi.pbix)  
+1. Download the Power BI dashboard: [Bank_Operation.pbix](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/power_bi/Bank_Operation.pbix)  
 2. Open in Power BI Desktop  
 3. Use slicers to filter by date range, channel, age band, or job role
 ---
@@ -124,10 +124,10 @@ The insights help reduce inefficiencies, improve customer experience, and suppor
 ---
 
 ## **Files**
-- [Python Cleaning Script](https://github.com/kChe626/Bank_Marketing/blob/main/Bank_cleaning_Python)
-- [Cleaned Dataset](https://github.com/kChe626/Bank_Marketing/blob/main/bank_cleaned.csv)  
-- [SQL Analysis Script](https://github.com/kChe626/Bank_Marketing/blob/main/Bank_Analysis_SQL.sql)  
-- [Power BI Dashboard](https://github.com/kChe626/Bank_Marketing/blob/main/bank_power_bi.pbix)  
+- [Python Cleaning Script](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/notes/Bank_Operation_Python.ipynb)
+- [Cleaned Dataset](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/data/bank_cleaned_operational.xlsx)  
+- [SQL Analysis Script](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/notes/Bank_Operation_SQL.sql)  
+- [Power BI Dashboard](https://github.com/kChe626/bank-operations-kpi-dashboard/blob/main/Bank_operation_Dashboard/power_bi/Bank_Operation.pbix)  
 
 ---
 
